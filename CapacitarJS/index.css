@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+#baner{
+    text-align: center;
+    position: static;
+    z-index: 3;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+#image_background{
+    width: 100%;
+    height: -webkit-fill-available;
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 0;
+    
+}
+
+#baner > p, #baner > button{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: orange;
+    position: relative;
+    z-index: 4;
+    font-size: clamp(17px, 25px, 28px);
+    padding-top: 290px;
+}
+
+#baner > button{
+    border-radius: 15px;
+    position: relative;
+    z-index: 4;
+    padding: 7px 10px;
+}
+
+#teste{
+    width: 75px;
+}
+
