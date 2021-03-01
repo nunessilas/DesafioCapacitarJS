@@ -6,7 +6,8 @@ body{
     text-align: center;
     position: static;
     z-index: 3;
-    /*background-color: rgba(0, 0, 0, 0.6);*/
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 35px;
 }
 
 #image_background{
@@ -15,14 +16,12 @@ body{
     position: absolute;
     z-index: -2;
     right: 0;
-    top: 0;
-    
+    top: 0; 
 }
 
 #baner > p, #baner > button{
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    color: orange;
+    font-family: 'RocknRoll One', sans-serif;
+    color: #de9818;
     position: relative;
     z-index: 4;
     font-size: clamp(17px, 25px, 28px);
@@ -33,10 +32,195 @@ body{
     border-radius: 15px;
     position: relative;
     z-index: 4;
-    padding: 7px 10px;
+    padding: 5px 5px;
 }
 
-#teste{
-    width: 75px;
+button > p{
+    margin: 0;
 }
+
+#home{
+    margin: 0;
+    padding: 0;
+}
+h4{
+    font-family: 'RocknRoll One', sans-serif;
+    color: #de9818;
+    font-size: 27px;
+}
+.tres_primeiras{
+    height: 0;
+    margin: 25px 45px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    grid-row-gap: 25px;
+}
+
+.esquerda{
+    width: 25%;
+    text-align: center;
+}
+
+.direita{
+    width: 73%;
+    text-align: justify;
+    margin-right: 6px;
+}
+#primeira{
+    background-image: url(imagens/mes-da-cerveja-cinza.png);
+}
+
+#segunda{
+    background-image: url(imagens/divulgacao-3.png);
+}
+
+#terceira{
+    background-image: url(imagens/istock-1091469178-1050x701.png);
+}
+
+#quarta{
+    background-image: url(imagens/cerveja-amigos-bebida-0817-1400x800.png);
+}
+
+#ultima{
+    background-image: url(imagens/o-preco-cinza.png);
+}
+.cerveja_individual{
+    width: 0;
+    height: 0;
+    font-family: 'Comfortaa', cursive;
+    border-style: none;
+    border-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome_cerveja{
+    color: #de9818;
+    margin: 5px 0 10px;
+}
+
+.foto_cerveja{
+    height: 110px;
+}
+
+.descricao_cerveja{
+    color: #ffc965;
+    margin: 5px 0 5px;
+}
+
+.acompanhamento{
+    color: white;
+    margin: 5px 0 ;
+}
+
+#quinta{
+    display: grid;
+    grid-template-columns: 50%;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+hr{
+    margin: 0;
+    border-color: #de9818;
+    border-style: solid;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#rodape > h2, #rodape > p{
+    font-family: 'RocknRoll One', sans-serif;
+    color: #de9818;
+}
+
+#contatos{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#contatos > p, #contatos > a{
+    justify-content: space-between;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+
+.imagem{
+    height: 24px;
+}
+
+@media (max-width: 769px){
+
+    #baner > p{
+        padding-top: 167px;
+        font-size: 36px;
+    }
+
+    #baner > button{
+        margin-top: 30px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .tres_primeiras{
+        grid-template-columns: 85%;
+        justify-items: center;
+        justify-content: center;
+        margin: 25px 0;
+    }
+    #quinta{
+        grid-template-columns: 85%;
+    }
+
+    #rodape > h2, #rodape > p{
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+
+    footer > p, footer > a{
+        font-size: 13px;
+    }
+
+    .imagem{
+        height: 14px;
+    }
+}
+
+@media (max-width: 605px){
+    #baner > button{
+        margin-top: 30px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    #baner > p{
+        font-size: 36px;
+    }    
+    
+    #contatos{
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 400px){
+
+    #baner > p {
+        padding-top: 119px;
+        font-size: 20px;
+    }
+    
+    #baner > button{
+    font-size: 20px;
+    }
+
+}
+
 
